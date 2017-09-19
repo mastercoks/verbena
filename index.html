@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="red">
+<html>
   <head>
     <meta charset="utf-8">
     <meta name="theme-color" content="#0199D0">
@@ -10,22 +10,39 @@
   </head>
   <body>
     <header>
-      <nav class="transparent z-depth-0">
-        <div class="nav-wrapper">
-          <div class="container">
-            <a href="index.html">
+      <div class="navbar-fixed">
+        <nav class="nav-inicial transparent z-depth-0 anime" id="navbar">
+          <div class="nav-wrapper">
+            <div class="container">
+              <a href="index.html">
+                <img class="logo-header" src="images/logo.svg" alt="Logo da Verbena Realty">
+              </a>
+              <a href="#" class="right hide-on-navbar-large"><i class="material-icons">menu</i></a>
+              <ul id="nav-mobile" class="right hide-on-navbar-small">
+                <li><a class="a-scroll" href="#conheca-verbena">Conheça a Verbena</a></li>
+                <li><a class="a-scroll" href="#empreendimentos">Empreendimentos</a></li>
+                <li><a>Financiamento</a></li>
+                <li><a class="a-scroll" href="#contato">Fale com um corretor</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div >
+        <nav class="hide">
+          <div class="nav-wrapper container">
+            <a href="index.html" class="brand-logo left">
               <img class="logo-header" src="images/logo.svg" alt="Logo da Verbena Realty">
             </a>
-            <a href="#" class="right hide-on-navbar-large"><i class="material-icons">menu</i></a>
-            <ul id="nav-mobile" class="right hide-on-navbar-small">
-              <li><a href="#conheca-verbena">Conheça a Verbena</a></li>
-              <li><a href="#empreendimentos">Empreendimentos</a></li>
-              <li><a href="#">Financiamento</a></li>
-              <li><a href="#contato">Fale com um corretor</a></li>
+            <ul class="right hide-on-med-and-down">
+              <li><a class="a-scroll" href="#conheca-verbena">Conheça a Verbena</a></li>
+              <li><a class="a-scroll" href="#empreendimentos">Empreendimentos</a></li>
+              <li><a class="" href="#">Financiamento</a></li>
+              <li><a class="a-scroll" href="#contato">Fale com um corretor</a></li>
             </ul>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
       <div class="container conteudo-header">
         <h1>Venha viver no paraíso</h1>
         <h2>
@@ -36,7 +53,7 @@
       <img class="efeito-header" src="images/efeito-header.svg" alt="">
     </header>
     <main>
-      <section id="costa-descobrimento">
+      <section id="costa-descobrimento" class="divisoes">
         <div class="background-costa-descobrimento">
           <div class="container">
             <div class="row">
@@ -80,7 +97,7 @@
       <section class="conheca-verbena">
         <div class="background-conheca-verbena">
           <svg viewBox="0 0 1280 70" preserveAspectRatio="none" id="headerCurve" fill="blue" role="presentation" aria-hidden="true"><polygon points="0 0 0 70 1280 0" fill="#0199d0"></polygon></svg>
-          <div class="container" id="conheca-verbena">
+          <div class="container divisoes" id="conheca-verbena">
             <div class="row">
               <div class="col s12 l6">
                 <h2>Responsabilidade, credibilidade e compromisso.</h2>
@@ -127,7 +144,7 @@
           <svg viewBox="0 0 1280 100" preserveAspectRatio="none" id="headerCurve" fill="blue" role="presentation" aria-hidden="true"><polygon points="0 0 1280 70 1280 100 0 100" fill="#a54600"></polygon></svg>
         </div>
       </section>
-      <section id="empreendimentos">
+      <section id="empreendimentos" class="divisoes">
 
         <div class="container">
           <div class="row">
@@ -176,7 +193,7 @@
       </section>
     </main>
 
-    <footer id="contato">
+    <footer id="contato" class="divisoes">
       <div class="container">
         <div class="row">
           <div class="col s12 l6 push-l6">
