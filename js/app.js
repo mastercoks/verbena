@@ -31,7 +31,7 @@ debounce = function(func, wait, immediate) {
 			conheca_verbena = 'anime-azul-escuro',
       empreendimentos = 'anime-laranja',
       contato = 'anime-transparente',
-			offset = $(window).height() * 3/10;
+			offset = $('#navbar').innerHeight() + 10;
 
 	function animeScroll() {
 		var documentTop = $(document).scrollTop();
