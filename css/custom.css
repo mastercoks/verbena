@@ -1,0 +1,157 @@
+@font-face {
+  font-family: myriad;
+  src: url("../fonts/MyriadPro-Regular.otf"); }
+@font-face {
+  font-family: merriweather;
+  src: url("../fonts/Merriweather-Regular.ttf");
+  font-style: normal; }
+@font-face {
+  font-family: merriweather;
+  src: url("../fonts/Merriweather-Italic.ttf");
+  font-style: italic; }
+@font-face {
+  font-family: montserrat;
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-style: normal; }
+html {
+  color: #ffffff; }
+
+header {
+  background: url("../images/background-header-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-shadow: 2px 2px 4px #000000; }
+  header i {
+    text-shadow: 0px 0px 0px #000000; }
+  header nav {
+    height: 130px;
+    line-height: 130px;
+    padding-top: 20px; }
+  header li {
+    text-transform: uppercase; }
+    header li a {
+      font-size: 12pt; }
+  header h1 {
+    font-family: "myriad", sans-serif;
+    font-size: 50pt;
+    text-transform: uppercase; }
+  header h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 17pt;
+    margin-bottom: 0; }
+  header .brand-logo {
+    width: 290px;
+    height: 108px; }
+  header .logo-header {
+    width: 290px;
+    height: 108px;
+    -webkit-filter: drop-shadow(2px 2px 4px #000000);
+    filter: drop-shadow(2px 2px 4px #000000); }
+  header .efeito-header {
+    margin: -20px 0 -30px -1px; }
+  header .conteudo-header {
+    margin-top: 200px;
+    margin-bottom: 20px; }
+
+#costa-descobrimento {
+  background-color: #0199d0; }
+  #costa-descobrimento .background-costa-descobrimento {
+    background: url("../images/background-costa-descobrimento.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding: 100px 0; }
+  #costa-descobrimento h2 {
+    font-family: "myriad", sans-serif;
+    font-size: 50pt;
+    text-transform: uppercase; }
+  #costa-descobrimento h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 17pt; }
+  #costa-descobrimento .aside-slider h2 {
+    font-family: "montserrat", sans-serif;
+    font-size: 26pt; }
+  @media (min-width: 1024px) {
+    #costa-descobrimento .aside-slider {
+      margin-top: 166px; } }
+
+.conheca-verbena {
+  font-family: "myriad", sans-serif;
+  background-color: #2d2c6b; }
+  .conheca-verbena h2 {
+    font-size: 30pt;
+    margin-left: 10px;
+    margin-bottom: 55px; }
+  .conheca-verbena p {
+    font-size: 16pt; }
+  .conheca-verbena .quote {
+    font-size: 20pt;
+    font-family: "merriweather", sans-serif;
+    font-style: italic;
+    margin-bottom: 17px; }
+  .conheca-verbena .background-conheca-verbena {
+    background: url("../images/background-conheca-verbena.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin-bottom: -20px; }
+  .conheca-verbena .container {
+    padding-top: 100px;
+    padding-bottom: 50px; }
+  .conheca-verbena .logo-conheca-verbena {
+    width: 385px;
+    height: 143px; }
+  .conheca-verbena .logos-conheca-verbena {
+    width: 217px;
+    height: 80px;
+    margin: 50px 0; }
+
+#empreendimentos {
+  background-color: #a54600;
+  margin-bottom: -20px; }
+
+#contato {
+  padding: 85px 0;
+  background-color: #11161d; }
+  #contato .logo-footer {
+    height: 143px;
+    width: 385px; }
+  #contato p {
+    font-size: 13pt; }
+    #contato p b {
+      font-size: 18pt; }
+  #contato .icone {
+    width: 40px;
+    height: 40px;
+    background-color: #d1232a;
+    border-radius: 100%; }
+  #contato .redes-sociais li {
+    display: inline-block;
+    padding: 8px;
+    line-height: 47px; }
+    #contato .redes-sociais li i {
+      font-size: 24px;
+      color: #ffffff; }
+  #contato .redes-sociais h4 {
+    font-size: 35pt;
+    margin-left: 2px; }
+  #contato .enviar {
+    height: 50px;
+    width: 150px;
+    background-color: #ffffff;
+    color: #697b83;
+    border: 0;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 14pt;
+    padding-left: 34px; }
+    #contato .enviar:hover {
+      background-color: #d2d2d2; }
+    #contato .enviar:active {
+      background-color: #ababab; }
+    #contato .enviar i {
+      color: #d1232a;
+      font-size: 30px; }
+
+.carousel.carousel-slider {
+  height: 380px; }

@@ -1,0 +1,6 @@
+.sass-cache/*
+bower_components/*
+node_modules/*
+sass/*
+gulpfile.js
+tempo-gasto.txt
