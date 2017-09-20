@@ -8,6 +8,23 @@ $('.a-scroll').click(function(e) {
   }, 500);
 })
 
+var ativado = false;
+$('#btn-menu-dropdown').click(function() {
+  if (!ativado) {
+    $('.menu-dropdown').addClass('menu-dropdown-ativo');
+    ativado = true;
+  } else {
+    $('.menu-dropdown').removeClass('menu-dropdown-ativo');
+    ativado = false;
+  }
+})
+$('.menu-item').click(function() {
+  if (ativado) {
+    $('.menu-dropdown').removeClass('menu-dropdown-ativo');
+    ativado = false;
+  }
+})
+
 // Debounce do Lodash
 debounce = function(func, wait, immediate) {
 	var timeout;
