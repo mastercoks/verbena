@@ -129,9 +129,11 @@ header {
   font-family: "myriad", sans-serif;
   background-color: #2d2c6b; }
   .conheca-verbena h2 {
-    font-size: 30pt;
     margin-left: 10px;
     margin-bottom: 55px; }
+    @media (min-width: 911px) {
+      .conheca-verbena h2 {
+        font-size: 30pt; } }
   .conheca-verbena .quote {
     font-size: 20pt;
     font-family: "merriweather", sans-serif;
@@ -179,8 +181,12 @@ header {
     height: 9rem;
     resize: none; }
   #contato .logo-footer {
-    height: 143px;
-    width: 385px; }
+    width: 217px;
+    height: 80px; }
+    @media (min-width: 911px) {
+      #contato .logo-footer {
+        width: 385px;
+        height: 143px; } }
   #contato p {
     font-size: 13pt; }
     #contato p b {
