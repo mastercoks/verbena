@@ -130,15 +130,19 @@ header {
   background-color: #2d2c6b; }
   .conheca-verbena h2 {
     margin-left: 10px;
-    margin-bottom: 55px; }
+    margin-bottom: 55px;
+    font-size: 20pt; }
     @media (min-width: 911px) {
       .conheca-verbena h2 {
         font-size: 30pt; } }
   .conheca-verbena .quote {
-    font-size: 20pt;
     font-family: "merriweather", sans-serif;
     font-style: italic;
-    margin-bottom: 17px; }
+    margin-bottom: 17px;
+    font-size: 14pt; }
+    @media (min-width: 911px) {
+      .conheca-verbena .quote {
+        font-size: 20pt; } }
   .conheca-verbena .background-conheca-verbena {
     background: url("../images/background-conheca-verbena.png");
     background-repeat: no-repeat;
@@ -163,6 +167,16 @@ header {
 #empreendimentos {
   background-color: #a54600;
   margin-bottom: -20px; }
+  #empreendimentos h2 {
+    font-size: 20pt; }
+    @media (min-width: 911px) {
+      #empreendimentos h2 {
+        font-size: 30pt; } }
+  #empreendimentos h3 {
+    font-size: 18pt; }
+    @media (min-width: 911px) {
+      #empreendimentos h3 {
+        font-size: 26pt; } }
 
 #contato {
   padding: 85px 0;
@@ -190,7 +204,10 @@ header {
   #contato p {
     font-size: 13pt; }
     #contato p b {
-      font-size: 18pt; }
+      font-size: 14pt; }
+      @media (min-width: 911px) {
+        #contato p b {
+          font-size: 18pt; } }
   #contato .icone {
     width: 40px;
     height: 40px;
