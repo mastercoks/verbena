@@ -1,6 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 354" xml:space="preserve">
-	<path fill="#11161D" fill-opacity="0.8" d="M1920,22.2c-151.1,150.4-382.2,151.3-582,152.4c-255.2,7.5-515.3,9.6-766.8,56.1v72.5
-		l777.8,3.5c84.8-2.7,169.7-7.5,254-16.4c122.8-12.9,217.9-51.3,317-125.9V22.2z"/>
-	<path fill="#0199D0" d="M0,354h1920V171c-54,50.2-120,91-188.8,117.2c-72.9,27.8-136.7,35-213.2,32.6c-194.5-6-390.8-39.2-583-66.8
-		c-158-16.6-315.1-29.4-474-33c0,0-329-7-461-124V354z"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 419.4" style="enable-background:new 0 0 1920 419.4;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#11161D;fill-opacity:0.8;}
+	.st1{fill:#0199D0;}
+</style>
+<path class="st0" d="M1920,22.2c-151.1,150.4-382.2,151.3-582,152.4c-255.2,7.5-515.3,9.6-766.8,56.1v72.5l777.8,3.5
+	c84.8-2.7,169.7-7.5,254-16.4c122.8-12.9,217.9-51.3,317-125.9V22.2z"/>
+<path class="st1" d="M0,419.4h1920V171c-54,50.2-120,91-188.8,117.2c-72.9,27.8-136.7,35-213.2,32.6c-194.5-6-390.8-39.2-583-66.8
+	c-158-16.6-315.1-29.4-474-33c0,0-329-7-461-124V419.4z"/>
 </svg>

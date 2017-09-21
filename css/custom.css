@@ -34,6 +34,12 @@ html {
   color: #ffffff;
   background-color: #0199d0; }
 
+p {
+  font-size: 16pt; }
+  @media (max-width: 910px) {
+    p {
+      font-size: 12pt; } }
+
 header {
   background: url("../images/background-header-2.jpg");
   background-repeat: no-repeat;
@@ -47,10 +53,16 @@ header {
     font-family: "myriad", sans-serif;
     font-size: 50pt;
     text-transform: uppercase; }
+    @media (max-width: 910px) {
+      header h1 {
+        font-size: 26pt; } }
   header h2 {
     font-family: "Roboto", sans-serif;
     font-size: 17pt;
     margin-bottom: 0; }
+    @media (max-width: 910px) {
+      header h2 {
+        font-size: 14pt; } }
   header .logo-header {
     height: 100px;
     margin: 10px auto;
@@ -61,15 +73,21 @@ header {
         height: 50px;
         margin: 3px auto; } }
   header .efeito-header {
-    margin: -20px 0 -30px -1px; }
+    margin-bottom: -20px; }
+    @media (min-width: 911px) {
+      header .efeito-header {
+        margin-left: -2px; } }
   header .conteudo-header {
     margin-top: 200px;
     margin-bottom: 20px; }
+    @media (max-width: 910px) {
+      header .conteudo-header {
+        margin-top: 50px; } }
   header .menu-dropdown {
     width: 100%;
     opacity: 0;
     transform: scaleY(0);
-    transition: 0.5s; }
+    transition: 1s; }
     header .menu-dropdown li {
       background-color: rgba(0, 0, 0, 0.2);
       width: 100%; }
@@ -84,17 +102,25 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-    padding: 100px 0; }
+    padding: 60px 0; }
   #costa-descobrimento h2 {
     font-family: "myriad", sans-serif;
     font-size: 50pt;
     text-transform: uppercase; }
+    @media (max-width: 910px) {
+      #costa-descobrimento h2 {
+        font-size: 20pt; } }
   #costa-descobrimento h3 {
     font-family: "Roboto", sans-serif;
     font-size: 17pt; }
+    @media (max-width: 910px) {
+      #costa-descobrimento h3 {
+        font-size: 14pt; } }
   #costa-descobrimento .aside-slider h2 {
-    font-family: "montserrat", sans-serif;
-    font-size: 26pt; }
+    font-family: "montserrat", sans-serif; }
+    @media (min-width: 911px) {
+      #costa-descobrimento .aside-slider h2 {
+        font-size: 26pt; } }
   @media (min-width: 1024px) {
     #costa-descobrimento .aside-slider {
       margin-top: 166px; } }
@@ -106,8 +132,6 @@ header {
     font-size: 30pt;
     margin-left: 10px;
     margin-bottom: 55px; }
-  .conheca-verbena p {
-    font-size: 16pt; }
   .conheca-verbena .quote {
     font-size: 20pt;
     font-family: "merriweather", sans-serif;
