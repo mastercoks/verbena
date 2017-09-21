@@ -149,7 +149,7 @@ header {
   .conheca-verbena .logo-conheca-verbena {
     width: 217px;
     height: 80px; }
-    @media (max-width: 911px) {
+    @media (min-width: 911px) {
       .conheca-verbena .logo-conheca-verbena {
         width: 385px;
         height: 143px; } }
