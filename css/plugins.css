@@ -2158,14 +2158,6 @@ ul.staggered-list li {
   .hide-on-large-only {
     display: none !important; } }
 
-@media only screen and (max-width: 1500px) {
-  .hide-on-navbar-small {
-    display: none !important; } }
-
-@media only screen and (min-width: 1500px) {
-  .hide-on-navbar-large {
-    display: none !important; } }
-
 @media only screen and (min-width: 1101px) {
   .show-on-large {
     display: block !important; } }
@@ -2289,7 +2281,7 @@ td, th {
     table.responsive-table.bordered tbody tr {
       border-right: 1px solid #d0d0d0; } }
 .collection {
-  margin: 0.5rem 0 1rem 0;
+  margin: 0.3333333333rem 0 0.6666666667rem 0;
   border: 1px solid #e0e0e0;
   border-radius: 2px;
   overflow: hidden;
@@ -2376,7 +2368,7 @@ td, th {
   width: 100%;
   background-color: #acece6;
   border-radius: 2px;
-  margin: 0.5rem 0 1rem 0;
+  margin: 0.3333333333rem 0 0.6666666667rem 0;
   overflow: hidden; }
   .progress .determinate {
     position: absolute;
@@ -2514,18 +2506,14 @@ nav ul a span.badge {
 
 .container {
   margin: 0 auto;
-  width: 95%; }
+  width: 90%; }
 
 @media only screen and (min-width: 911px) {
   .container {
-    width: 90%; } }
+    width: 85%; } }
 @media only screen and (min-width: 1101px) {
   .container {
-    width: 85%; } }
-.container .row {
-  margin-left: -0.75rem;
-  margin-right: -0.75rem; }
-
+    width: 80%; } }
 .section {
   padding-top: 1rem;
   padding-bottom: 1rem; }
@@ -2547,67 +2535,85 @@ nav ul a span.badge {
   .row .col {
     float: left;
     box-sizing: border-box;
-    padding: 0 0.75rem;
+    padding: 0;
     min-height: 1px; }
     .row .col[class*="push-"], .row .col[class*="pull-"] {
       position: relative; }
+    @media only screen and (min-width: 911px) {
+      .row .col {
+        padding: 0 1rem; } }
+    @media only screen and (max-width: 1100px) {
+      .row .col {
+        margin: 1rem; } }
     .row .col.s1 {
       width: 8.3333333333%;
+      margin-right: 0px;
       margin-left: auto;
       left: auto;
       right: auto; }
     .row .col.s2 {
       width: 16.6666666667%;
+      margin-right: 0px;
       margin-left: auto;
       left: auto;
       right: auto; }
     .row .col.s3 {
       width: 25%;
+      margin-right: 0px;
       margin-left: auto;
       left: auto;
       right: auto; }
     .row .col.s4 {
       width: 33.3333333333%;
+      margin-right: 0px;
       margin-left: auto;
       left: auto;
       right: auto; }
     .row .col.s5 {
       width: 41.6666666667%;
+      margin-right: 0px;
       margin-left: auto;
       left: auto;
       right: auto; }
     .row .col.s6 {
       width: 50%;
+      margin-right: 0px;
       margin-left: auto;
       left: auto;
       right: auto; }
     .row .col.s7 {
       width: 58.3333333333%;
+      margin-right: 0px;
       margin-left: auto;
       left: auto;
       right: auto; }
     .row .col.s8 {
       width: 66.6666666667%;
+      margin-right: 0px;
       margin-left: auto;
       left: auto;
       right: auto; }
     .row .col.s9 {
       width: 75%;
+      margin-right: 0px;
       margin-left: auto;
       left: auto;
       right: auto; }
     .row .col.s10 {
       width: 83.3333333333%;
+      margin-right: 0px;
       margin-left: auto;
       left: auto;
       right: auto; }
     .row .col.s11 {
       width: 91.6666666667%;
+      margin-right: 0px;
       margin-left: auto;
       left: auto;
       right: auto; }
     .row .col.s12 {
       width: 100%;
+      margin-right: 0px;
       margin-left: auto;
       left: auto;
       right: auto; }
@@ -2686,61 +2692,73 @@ nav ul a span.badge {
     @media only screen and (min-width: 911px) {
       .row .col.m1 {
         width: 8.3333333333%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
       .row .col.m2 {
         width: 16.6666666667%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
       .row .col.m3 {
         width: 25%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
       .row .col.m4 {
         width: 33.3333333333%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
       .row .col.m5 {
         width: 41.6666666667%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
       .row .col.m6 {
         width: 50%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
       .row .col.m7 {
         width: 58.3333333333%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
       .row .col.m8 {
         width: 66.6666666667%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
       .row .col.m9 {
         width: 75%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
       .row .col.m10 {
         width: 83.3333333333%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
       .row .col.m11 {
         width: 91.6666666667%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
       .row .col.m12 {
         width: 100%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
@@ -2819,61 +2837,73 @@ nav ul a span.badge {
     @media only screen and (min-width: 1101px) {
       .row .col.l1 {
         width: 8.3333333333%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
       .row .col.l2 {
         width: 16.6666666667%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
       .row .col.l3 {
         width: 25%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
       .row .col.l4 {
         width: 33.3333333333%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
       .row .col.l5 {
         width: 41.6666666667%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
       .row .col.l6 {
         width: 50%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
       .row .col.l7 {
         width: 58.3333333333%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
       .row .col.l8 {
         width: 66.6666666667%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
       .row .col.l9 {
         width: 75%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
       .row .col.l10 {
         width: 83.3333333333%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
       .row .col.l11 {
         width: 91.6666666667%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
       .row .col.l12 {
         width: 100%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
@@ -2952,61 +2982,73 @@ nav ul a span.badge {
     @media only screen and (min-width: 1201px) {
       .row .col.xl1 {
         width: 8.3333333333%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
       .row .col.xl2 {
         width: 16.6666666667%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
       .row .col.xl3 {
         width: 25%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
       .row .col.xl4 {
         width: 33.3333333333%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
       .row .col.xl5 {
         width: 41.6666666667%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
       .row .col.xl6 {
         width: 50%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
       .row .col.xl7 {
         width: 58.3333333333%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
       .row .col.xl8 {
         width: 66.6666666667%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
       .row .col.xl9 {
         width: 75%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
       .row .col.xl10 {
         width: 83.3333333333%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
       .row .col.xl11 {
         width: 91.6666666667%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
       .row .col.xl12 {
         width: 100%;
+        margin-right: 0px;
         margin-left: auto;
         left: auto;
         right: auto; }
@@ -3131,7 +3173,7 @@ nav {
     nav .brand-logo.center {
       left: 50%;
       transform: translateX(-50%); }
-    @media only screen and (min-width: 1500px) {
+    @media only screen and (min-width: 1360px) {
       nav .brand-logo {
         left: 50%;
         transform: translateX(-50%); }
@@ -3210,7 +3252,7 @@ nav {
   .navbar-fixed nav {
     position: fixed; }
 
-@media only screen and (min-width: 1101px) {
+@media only screen and (min-width: 1201px) {
   nav.nav-extended .nav-wrapper {
     min-height: 120px; }
 
@@ -3390,13 +3432,13 @@ small {
 .card-panel {
   transition: box-shadow .25s;
   padding: 24px;
-  margin: 0.5rem 0 1rem 0;
+  margin: 0.3333333333rem 0 0.6666666667rem 0;
   border-radius: 2px;
   background-color: #fff; }
 
 .card {
   position: relative;
-  margin: 0.5rem 0 1rem 0;
+  margin: 0.3333333333rem 0 0.6666666667rem 0;
   background-color: #fff;
   transition: box-shadow .25s;
   border-radius: 2px; }
@@ -4080,7 +4122,7 @@ button.btn-floating {
   border-top: 1px solid #ddd;
   border-right: 1px solid #ddd;
   border-left: 1px solid #ddd;
-  margin: 0.5rem 0 1rem 0; }
+  margin: 0.3333333333rem 0 0.6666666667rem 0; }
 
 .collapsible-header {
   display: flex;

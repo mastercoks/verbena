@@ -40,6 +40,12 @@ p {
     p {
       font-size: 12pt; } }
 
+.divisoria-top {
+  margin-top: -5px; }
+
+.divisoria-bot {
+  margin-bottom: -10px; }
+
 header {
   background: url("../images/background-header-2.jpg");
   background-repeat: no-repeat;
@@ -66,23 +72,30 @@ header {
   header .logo-header {
     height: 100px;
     margin: 10px auto;
-    -webkit-filter: drop-shadow(2px 2px 4px #000000);
-    filter: drop-shadow(2px 2px 4px #000000); }
-    @media (max-width: 1100px) {
+    transition: 0.5s; }
+    @media (max-width: 1200px) {
       header .logo-header {
         height: 50px;
         margin: 3px auto; } }
+    header .logo-header img {
+      height: 100%;
+      -webkit-filter: drop-shadow(2px 2px 4px #000000);
+      filter: drop-shadow(2px 2px 4px #000000); }
   header .efeito-header {
-    margin-bottom: -20px; }
+    margin-bottom: -10px; }
     @media (min-width: 911px) {
       header .efeito-header {
         margin-left: -2px; } }
   header .conteudo-header {
     margin-top: 200px;
-    margin-bottom: 20px; }
+    padding-bottom: 30px; }
     @media (max-width: 910px) {
       header .conteudo-header {
         margin-top: 50px; } }
+    @media (min-width: 911px) {
+      header .conteudo-header {
+        margin-bottom: 30px;
+        padding-bottom: 0px; } }
   header .menu-dropdown {
     width: 100%;
     opacity: 0;
@@ -101,39 +114,43 @@ header {
     background: url("../images/background-costa-descobrimento.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
-    padding: 60px 0; }
+    height: 100%; }
+    @media (min-width: 911px) {
+      #costa-descobrimento .background-costa-descobrimento {
+        padding: 70px 0 100px 0; } }
   #costa-descobrimento h2 {
     font-family: "myriad", sans-serif;
     font-size: 50pt;
     text-transform: uppercase; }
     @media (max-width: 910px) {
       #costa-descobrimento h2 {
-        font-size: 20pt; } }
+        font-size: 26pt; } }
   #costa-descobrimento h3 {
     font-family: "Roboto", sans-serif;
-    font-size: 17pt; }
+    font-size: 18pt; }
     @media (max-width: 910px) {
       #costa-descobrimento h3 {
-        font-size: 14pt; } }
+        font-size: 16pt; } }
+    @media (max-width: 1100px) {
+      #costa-descobrimento h3 {
+        margin: 0; } }
   #costa-descobrimento .aside-slider h2 {
-    font-family: "montserrat", sans-serif; }
-    @media (min-width: 911px) {
+    font-family: "montserrat", sans-serif;
+    font-size: 26pt; }
+    @media (max-width: 910px) {
       #costa-descobrimento .aside-slider h2 {
-        font-size: 26pt; } }
-  @media (min-width: 1024px) {
-    #costa-descobrimento .aside-slider {
-      margin-top: 166px; } }
+        font-size: 20pt;
+        margin-bottom: 0; } }
 
 .conheca-verbena {
   font-family: "myriad", sans-serif;
   background-color: #2d2c6b; }
   .conheca-verbena h2 {
-    margin-left: 10px;
-    margin-bottom: 55px;
     font-size: 20pt; }
     @media (min-width: 911px) {
       .conheca-verbena h2 {
+        margin-left: 10px;
+        margin-bottom: 55px;
         font-size: 30pt; } }
   .conheca-verbena .quote {
     font-family: "merriweather", sans-serif;
@@ -147,11 +164,10 @@ header {
     background: url("../images/background-conheca-verbena.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
-    margin-bottom: -20px; }
-  .conheca-verbena .container {
-    padding-top: 100px;
-    padding-bottom: 50px; }
+    height: 100%; }
+  @media (min-width: 911px) {
+    .conheca-verbena .container {
+      padding: 100px 0 50px 0; } }
   .conheca-verbena .logo-conheca-verbena {
     width: 217px;
     height: 80px; }
@@ -160,13 +176,17 @@ header {
         width: 385px;
         height: 143px; } }
   .conheca-verbena .logos-conheca-verbena {
-    width: 217px;
-    height: 80px;
-    margin: 50px 0; }
+    margin: 0 10px; }
+    @media (min-width: 911px) {
+      .conheca-verbena .logos-conheca-verbena {
+        width: 217px;
+        height: 80px; } }
+    @media (min-width: 1100px) {
+      .conheca-verbena .logos-conheca-verbena {
+        margin: 50px 0; } }
 
 #empreendimentos {
-  background-color: #a54600;
-  margin-bottom: -20px; }
+  background-color: #a54600; }
   #empreendimentos h2 {
     font-size: 20pt; }
     @media (min-width: 911px) {
@@ -177,10 +197,18 @@ header {
     @media (min-width: 911px) {
       #empreendimentos h3 {
         font-size: 26pt; } }
+  #empreendimentos .efeito-footer {
+    margin-bottom: -10px; }
+  @media (max-width: 910px) {
+    #empreendimentos {
+      padding-bottom: 30px; } }
 
 #contato {
-  padding: 85px 0;
-  background-color: #11161d; }
+  background-color: #11161d;
+  padding-bottom: 20px; }
+  @media (min-width: 911px) {
+    #contato {
+      padding: 85px 0; } }
   #contato input, #contato textarea {
     color: #212121;
     line-height: normal;
@@ -202,9 +230,12 @@ header {
         width: 385px;
         height: 143px; } }
   #contato p {
-    font-size: 13pt; }
+    font-size: 12pt; }
+    @media (min-width: 911px) {
+      #contato p {
+        font-size: 13pt; } }
     #contato p b {
-      font-size: 14pt; }
+      font-size: 12pt; }
       @media (min-width: 911px) {
         #contato p b {
           font-size: 18pt; } }
