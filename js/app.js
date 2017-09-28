@@ -59,23 +59,31 @@ debounce = function(func, wait, immediate) {
         if($(this).attr('id') == 'costa-descobrimento') {
   				$('#navbar').removeClass('transparent');
           $('#navbar').addClass(costa_descobrimento);
+          $('#navbar #menu-dropdown li').addClass(costa_descobrimento);
         } else if($(this).attr('id') == 'conheca-verbena') {
           $('#navbar').addClass(conheca_verbena);
+          $('#navbar #menu-dropdown li').addClass(conheca_verbena);
         } else if($(this).attr('id') == 'empreendimentos') {
           $('#navbar').addClass(empreendimentos);
+          $('#navbar #menu-dropdown li').addClass(empreendimentos);
         } else if($(this).attr('id') == 'contato') {
           $('#navbar').addClass(contato);
+          $('#navbar #menu-dropdown li').addClass(contato);
         }
 			} else if (documentTop < itemTop - offset) {
         if($(this).attr('id') == 'costa-descobrimento') {
   				$('#navbar').addClass('transparent');
           $('#navbar').removeClass(costa_descobrimento);
+          $('#navbar  #menu-dropdown li').removeClass(costa_descobrimento);
         } else if($(this).attr('id') == 'conheca-verbena') {
           $('#navbar').removeClass(conheca_verbena);
+          $('#navbar  #menu-dropdown li').removeClass(conheca_verbena);
         } else if($(this).attr('id') == 'empreendimentos') {
           $('#navbar').removeClass(empreendimentos);
+          $('#navbar  #menu-dropdown li').removeClass(empreendimentos);
         } else if($(this).attr('id') == 'contato') {
           $('#navbar').removeClass(contato);
+          $('#navbar  #menu-dropdown li').removeClass(contato);
         }
 			}
 		});

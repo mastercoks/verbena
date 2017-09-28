@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/plugins.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="css/custom.css"  media="screen,projection"/>
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
   <body>
@@ -17,7 +19,11 @@
             <a href="index.html" class="brand-logo left logo-header">
               <img src="images/logo.svg" alt="Logo da Verbena Realty">
             </a>
-            <a href="#!" id="btn-menu-dropdown" class="right hide-on-med-and-up"><i class="material-icons">menu</i></a>
+            <input type="checkbox" id="change-hamburguer" />
+            <a class="hamburguer right hide-on-med-and-up" href="#!" id="btn-menu-dropdown">
+              <span></span>
+              <label for="change-hamburguer"></label>
+            </a>
             <ul id="nav-mobile" class="right hide-on-small-only">
               <li><a class="a-scroll" href="#conheca-verbena">Conheça a Verbena</a></li>
               <li><a class="a-scroll" href="#empreendimentos">Empreendimentos</a></li>
@@ -26,10 +32,10 @@
             </ul>
           </div>
           <ul id="menu-dropdown" class="menu-dropdown center hide-on-med-and-up">
-            <li><a class="a-scroll menu-item" href="#conheca-verbena">Conheça a Verbena</a></li>
-            <li><a class="a-scroll menu-item" href="#empreendimentos">Empreendimentos</a></li>
-            <li><a class="menu-item">Financiamento</a></li>
-            <li><a class="a-scroll menu-item" href="#contato">Fale com um corretor</a></li>
+            <li class="anime"><a class="a-scroll menu-item" href="#conheca-verbena">Conheça a Verbena</a></li>
+            <li class="anime"><a class="a-scroll menu-item" href="#empreendimentos">Empreendimentos</a></li>
+            <li class="anime"><a class="menu-item">Financiamento</a></li>
+            <li class="anime"><a class="a-scroll menu-item" href="#contato">Fale com um corretor</a></li>
           </ul>
         </nav>
       </div>
@@ -60,17 +66,17 @@
                 <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
               </div>
               <div class="col s12 m12 l4 aside-slider">
-                <div class="carousel carousel-slider" data-indicators="true">
-                 <div class="carousel-item white-text" href="#one!">
-                   <img src="images/imagem-exemplo2.jpg">
-                 </div>
-                 <div class="carousel-item white-text" href="#two!">
+                <div class="slide-praia-muta">
+                 <div>
                    <img class="responsive-img" src="images/imagem-exemplo2.jpg">
                  </div>
-                 <div class="carousel-item white-text" href="#three!">
+                 <div>
                    <img class="responsive-img" src="images/imagem-exemplo2.jpg">
                  </div>
-                 <div class="carousel-item white-text" href="#four!">
+                 <div>
+                   <img class="responsive-img" src="images/imagem-exemplo2.jpg">
+                 </div>
+                 <div>
                    <img class="responsive-img" src="images/imagem-exemplo2.jpg">
                  </div>
                </div>
@@ -133,46 +139,136 @@
       <section id="empreendimentos" class="divisoes">
         <div class="container">
           <div class="row">
-            <div class="col s12 l6">
+            <div class="col s12 m6">
               <h2>Conheça nossos empreendimentos</h2>
             </div>
-            <div class="col s12 l6">
-              Slider
-            </div>
-          </div>
-          <div class="row">
-            <div>
-              <div class="col s12" id="slide-empreendimento">
-                <h3>Empreendimento</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
-              <div class="col s12" id="slide-projeto">
-                <h3>Projeto</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
-              <div class="col s12" id="slide-localizacao">
-                <img src="images/localizacao.jpg" alt="Localização da Verbena Realty" class="responsive-img">
-              </div>
-              <div class="col s12" id="slide-fotos">
-                <div class="carousel carousel-slider" data-indicators="true">
-                  <a class="carousel-item" href="#one!"><img class="responsive-img" src="images/imagem-exemplo.jpg"></a>
-                  <a class="carousel-item" href="#two!"><img class="responsive-img" src="images/imagem-exemplo.jpg"></a>
-                  <a class="carousel-item" href="#three!"><img class="responsive-img" src="images/imagem-exemplo.jpg"></a>
-                  <a class="carousel-item" href="#four!"><img class="responsive-img" src="images/imagem-exemplo.jpg"></a>
+            <div class="col s12 m6">
+              <div class="row slider-empreendimentos">
+                <div class="col s2 center">
+                  <a href="" class="prev"><i class="fa fa-angle-left"></i></a>
+                </div>
+                <div class="col s8 div-slide">
+                  <div class="slide-nav">
+                    <div>
+                      <img class="responsive-img logos-empreendimentos" src="images/princesa-isabel.svg" alt="Logo da Princesa Isabel">
+                    </div>
+                    <div>
+                      <img class="responsive-img logos-empreendimentos" src="images/logo.svg" alt="Logo da Princesa Isabel">
+                    </div>
+                    <div>
+                      <img class="responsive-img logos-empreendimentos" src="images/princesa-isabel.svg" alt="Logo da Princesa Isabel">
+                    </div>
+                  </div>
+                </div>
+                <div class="col s2 center">
+                  <a href="" class="next"><i class="fa fa-angle-right"></i></a>
                 </div>
               </div>
             </div>
           </div>
-          <nav class="nav-extended">
-            <div class="nav-content">
-              <ul class="tabs tabs-transparent">
-                <li class="tab"><a class="active" href="#slide-empreendimento">O empreendimento</a></li>
-                <li class="tab"><a href="#slide-projeto">Projeto</a></li>
-                <li class="tab"><a href="#slide-localizacao">Localização</a></li>
-                <li class="tab"><a href="#slide-fotos">Fotos</a></li>
-              </ul>
+          <div class="slide">
+            <div>
+              <div class="row">
+                <div class="col s12" id="slide-empreendimento-1">
+                  <h3>Empreendimento 1</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="col s12" id="slide-projeto-1">
+                  <h3>Projeto 1</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="col s12" id="slide-localizacao-1">
+                  <img src="images/localizacao.jpg" alt="Localização da Verbena Realty" class="responsive-img">
+                </div>
+                <div class="col s12" id="slide-fotos-1">
+                  <div class="carousel carousel-slider" data-indicators="true">
+                    <a class="carousel-item" href="#one!"><img class="responsive-img" src="images/imagem-exemplo.jpg"></a>
+                    <a class="carousel-item" href="#two!"><img class="responsive-img" src="images/imagem-exemplo.jpg"></a>
+                    <a class="carousel-item" href="#three!"><img class="responsive-img" src="images/imagem-exemplo.jpg"></a>
+                    <a class="carousel-item" href="#four!"><img class="responsive-img" src="images/imagem-exemplo.jpg"></a>
+                  </div>
+                </div>
+              </div>
+              <nav class="nav-extended">
+                <div class="nav-content">
+                  <ul class="tabs tabs-transparent">
+                    <li class="tab"><a class="active" href="#slide-empreendimento-1">O empreendimento</a></li>
+                    <li class="tab"><a href="#slide-projeto-1">Projeto</a></li>
+                    <li class="tab"><a href="#slide-localizacao-1">Localização</a></li>
+                    <li class="tab"><a href="#slide-fotos-1">Fotos</a></li>
+                  </ul>
+                </div>
+              </nav>
             </div>
-          </nav>
+            <div>
+              <div class="row">
+                <div class="col s12" id="slide-empreendimento-2">
+                  <h3>Empreendimento 2</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="col s12" id="slide-projeto-2">
+                  <h3>Projeto 2</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="col s12" id="slide-localizacao-2">
+                  <img src="images/localizacao.jpg" alt="Localização da Verbena Realty" class="responsive-img">
+                </div>
+                <div class="col s12" id="slide-fotos-2">
+                  <div class="carousel carousel-slider" data-indicators="true">
+                    <a class="carousel-item" href="#one!"><img class="responsive-img" src="images/imagem-exemplo.jpg"></a>
+                    <a class="carousel-item" href="#two!"><img class="responsive-img" src="images/imagem-exemplo.jpg"></a>
+                    <a class="carousel-item" href="#three!"><img class="responsive-img" src="images/imagem-exemplo.jpg"></a>
+                    <a class="carousel-item" href="#four!"><img class="responsive-img" src="images/imagem-exemplo.jpg"></a>
+                  </div>
+                </div>
+              </div>
+              <nav class="nav-extended">
+                <div class="nav-content">
+                  <ul class="tabs tabs-transparent">
+                    <li class="tab"><a class="active" href="#slide-empreendimento-2">O empreendimento</a></li>
+                    <li class="tab"><a href="#slide-projeto-2">Projeto</a></li>
+                    <li class="tab"><a href="#slide-localizacao-2">Localização</a></li>
+                    <li class="tab"><a href="#slide-fotos-2">Fotos</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div>
+              <div class="row">
+                <div class="col s12" id="slide-empreendimento-3">
+                  <h3>Empreendimento 3</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="col s12" id="slide-projeto-3">
+                  <h3>Projeto 3</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="col s12" id="slide-localizacao-3">
+                  <img src="images/localizacao.jpg" alt="Localização da Verbena Realty" class="responsive-img">
+                </div>
+                <div class="col s12" id="slide-fotos-3">
+                  <div class="carousel carousel-slider" data-indicators="true">
+                    <a class="carousel-item" href="#one!"><img class="responsive-img" src="images/imagem-exemplo.jpg"></a>
+                    <a class="carousel-item" href="#two!"><img class="responsive-img" src="images/imagem-exemplo.jpg"></a>
+                    <a class="carousel-item" href="#three!"><img class="responsive-img" src="images/imagem-exemplo.jpg"></a>
+                    <a class="carousel-item" href="#four!"><img class="responsive-img" src="images/imagem-exemplo.jpg"></a>
+                  </div>
+                </div>
+              </div>
+              <nav class="nav-extended">
+                <div class="nav-content">
+                  <ul class="tabs tabs-transparent">
+                    <li class="tab"><a class="active" href="#slide-empreendimento-3">O empreendimento</a></li>
+                    <li class="tab"><a href="#slide-projeto-3">Projeto</a></li>
+                    <li class="tab"><a href="#slide-localizacao-3">Localização</a></li>
+                    <li class="tab"><a href="#slide-fotos-3">Fotos</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+
+          </div>
+
         </div>
         <img class="efeito-footer hide-on-small-only" src="images/efeito-footer.svg" alt="">
       </section>
@@ -216,10 +312,32 @@
       </div>
     </footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript">
-    $('.carousel.carousel-slider').carousel({fullWidth: true});
+      $('.carousel.carousel-slider').carousel({fullWidth: true});
+      $(document).ready(function(){
+        $('.slide-praia-muta').slick({
+          autoplay: 500
+        });
+        $('.slide').slick({
+          draggable: false,
+          arrows: false,
+          fade: true,
+          asNavFor: '.slide-nav'
+        });
+        $('.slide-nav').slick({
+          nextArrow: $('.next'),
+          prevArrow: $('.prev'),
+          draggable: false,
+          asNavFor: '.slide',
+          arrows: true,
+          dots: false
+        });
+
+      });
     </script>
 
   </body>

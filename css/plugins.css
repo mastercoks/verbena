@@ -5852,10 +5852,6 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   padding: 0;
   box-sizing: border-box; }
 
-body {
-  background: url(http://www.todoespacoonline.com/w/wp-content/uploads/2014/07/01.png) no-repeat;
-  background-size: cover; }
-
 .entire-menu {
   position: absolute;
   padding: 20px;
@@ -5867,13 +5863,13 @@ body {
   display: block;
   position: relative;
   background: none;
-  margin: 0 0 10px 0; }
+  margin: 18px 0 18px 0; }
   .hamburguer:after, .hamburguer:before, .hamburguer span, .hamburguer label {
     content: ' ';
     display: block;
     width: 100%;
     height: 4px;
-    background: #000;
+    background: #fff;
     left: 0;
     position: absolute;
     -webkit-transition: all 300ms ease-in-out;

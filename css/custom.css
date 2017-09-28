@@ -14,7 +14,7 @@
   src: url("../fonts/Montserrat-Regular.ttf");
   font-style: normal; }
 .anime {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   display: block; }
 
@@ -102,7 +102,6 @@ header {
     transform: scaleY(0);
     transition: 1s; }
     header .menu-dropdown li {
-      background-color: rgba(0, 0, 0, 0.2);
       width: 100%; }
   header .menu-dropdown-ativo {
     opacity: 1;
@@ -186,12 +185,32 @@ header {
         margin: 50px 0; } }
 
 #empreendimentos {
-  background-color: #a54600; }
+  background-color: #a54600;
+  /*.slide
+   * width: 240px
+   * height: 100px */
+  /*.item-empreendimento
+   * display: none
+   * width: 100%
+   * height: 100%
+   * &:target
+   *   display: block */ }
   #empreendimentos h2 {
+    font-family: "myriad", sans-serif;
+    text-transform: uppercase;
     font-size: 20pt; }
     @media (min-width: 911px) {
       #empreendimentos h2 {
         font-size: 30pt; } }
+    @media (min-width: 1200px) {
+      #empreendimentos h2 {
+        font-size: 35pt; } }
+    @media (min-width: 1300px) {
+      #empreendimentos h2 {
+        font-size: 40pt; } }
+    @media (min-width: 1400px) {
+      #empreendimentos h2 {
+        font-size: 45pt; } }
   #empreendimentos h3 {
     font-size: 18pt; }
     @media (min-width: 911px) {
@@ -202,6 +221,39 @@ header {
   @media (max-width: 910px) {
     #empreendimentos {
       padding-bottom: 30px; } }
+  #empreendimentos .slider-empreendimentos {
+    display: flex;
+    align-items: center;
+    max-height: 140px;
+    margin: 0; }
+  #empreendimentos .fa {
+    font-size: 50pt;
+    color: #E9C37A; }
+  #empreendimentos .div-slide {
+    margin-top: 40px;
+    height: 140px; }
+    @media (min-width: 911px) {
+      #empreendimentos .div-slide {
+        margin-top: 10px;
+        height: 140px; } }
+    @media (min-width: 1200px) {
+      #empreendimentos .div-slide {
+        margin-top: 10px;
+        height: 150px; } }
+    @media (min-width: 1300px) {
+      #empreendimentos .div-slide {
+        margin-top: 25px;
+        height: 170px; } }
+    @media (min-width: 1400px) {
+      #empreendimentos .div-slide {
+        margin-top: 40px;
+        height: 180px; } }
+  #empreendimentos .logos-empreendimentos {
+    height: 100%;
+    margin: auto; }
+  @media (min-width: 911px) {
+    #empreendimentos .container {
+      padding: 100px 0 50px 0; } }
 
 #contato {
   background-color: #11161d;
