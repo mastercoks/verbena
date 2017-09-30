@@ -35,10 +35,10 @@ html {
   background-color: #0199d0; }
 
 p {
-  font-size: 16pt; }
+  font-size: 12pt; }
   @media (max-width: 910px) {
     p {
-      font-size: 12pt; } }
+      font-size: 10pt; } }
 
 .divisoria-top {
   margin-top: -5px; }
@@ -70,7 +70,7 @@ header {
       header h2 {
         font-size: 14pt; } }
   header .logo-header {
-    height: 100px;
+    height: 80px;
     margin: 10px auto;
     transition: 0.5s; }
     @media (max-width: 1200px) {
@@ -119,46 +119,47 @@ header {
         padding: 70px 0 100px 0; } }
   #costa-descobrimento h2 {
     font-family: "myriad", sans-serif;
-    font-size: 50pt;
+    font-size: 36pt;
     text-transform: uppercase; }
     @media (max-width: 910px) {
       #costa-descobrimento h2 {
         font-size: 26pt; } }
   #costa-descobrimento h3 {
     font-family: "Roboto", sans-serif;
-    font-size: 18pt; }
+    font-size: 16pt; }
     @media (max-width: 910px) {
       #costa-descobrimento h3 {
-        font-size: 16pt; } }
+        font-size: 14pt; } }
     @media (max-width: 1100px) {
       #costa-descobrimento h3 {
         margin: 0; } }
   #costa-descobrimento .aside-slider h2 {
+    margin-top: 20px;
     font-family: "montserrat", sans-serif;
-    font-size: 26pt; }
+    font-size: 20pt; }
     @media (max-width: 910px) {
       #costa-descobrimento .aside-slider h2 {
-        font-size: 20pt;
+        font-size: 16pt;
         margin-bottom: 0; } }
 
 .conheca-verbena {
   font-family: "myriad", sans-serif;
   background-color: #2d2c6b; }
   .conheca-verbena h2 {
-    font-size: 20pt; }
+    font-size: 16pt; }
     @media (min-width: 911px) {
       .conheca-verbena h2 {
         margin-left: 10px;
         margin-bottom: 55px;
-        font-size: 30pt; } }
+        font-size: 24pt; } }
   .conheca-verbena .quote {
     font-family: "merriweather", sans-serif;
     font-style: italic;
     margin-bottom: 17px;
-    font-size: 14pt; }
+    font-size: 12pt; }
     @media (min-width: 911px) {
       .conheca-verbena .quote {
-        font-size: 20pt; } }
+        font-size: 14pt; } }
   .conheca-verbena .background-conheca-verbena {
     background: url("../images/background-conheca-verbena.png");
     background-repeat: no-repeat;
@@ -173,13 +174,11 @@ header {
     @media (min-width: 911px) {
       .conheca-verbena .logo-conheca-verbena {
         width: 385px;
-        height: 143px; } }
+        height: 143px;
+        margin-bottom: 8px; } }
   .conheca-verbena .logos-conheca-verbena {
-    margin: 0 10px; }
-    @media (min-width: 911px) {
-      .conheca-verbena .logos-conheca-verbena {
-        width: 217px;
-        height: 80px; } }
+    margin: 0 10px;
+    height: 120px; }
     @media (min-width: 1100px) {
       .conheca-verbena .logos-conheca-verbena {
         margin: 50px 0; } }
@@ -213,7 +212,8 @@ header {
         font-size: 18pt;
         margin-top: 0; } }
   #empreendimentos .efeito-footer {
-    margin-bottom: -10px; }
+    margin-bottom: -10px;
+    margin-left: -1px; }
   @media (max-width: 910px) {
     #empreendimentos {
       padding-bottom: 30px; } }
@@ -251,7 +251,7 @@ header {
     width: 100%; }
   @media (min-width: 911px) {
     #empreendimentos .container {
-      padding: 100px 0 50px 0; } }
+      padding: 50px 0 50px 0; } }
   #empreendimentos .tabs {
     display: flex; }
   #empreendimentos .tab {
@@ -267,6 +267,15 @@ header {
   @media (max-width: 600px) {
     #empreendimentos .tab-empreendimento {
       width: 35%; } }
+  #empreendimentos .tab-3 {
+    width: 33.3333333333%; }
+  #empreendimentos .tab-2 {
+    width: 50%; }
+  #empreendimentos .slide {
+    max-width: 900px;
+    margin: auto; }
+    #empreendimentos .slide .col {
+      height: auto; }
 
 #contato {
   background-color: #11161d;

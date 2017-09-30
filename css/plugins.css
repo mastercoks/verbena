@@ -3254,14 +3254,14 @@ nav {
 
 @media only screen and (min-width: 1201px) {
   nav.nav-extended .nav-wrapper {
-    min-height: 120px; }
+    min-height: 100px; }
 
   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-    height: 120px;
-    line-height: 120px; }
+    height: 100px;
+    line-height: 100px; }
 
   .navbar-fixed {
-    height: 120px; } }
+    height: 100px; } }
 @font-face {
   font-family: "Roboto";
   src: local(Roboto Thin), url("../fonts/roboto/Roboto-Thin.woff2") format("woff2"), url("../fonts/roboto/Roboto-Thin.woff") format("woff");
@@ -4917,7 +4917,6 @@ button.btn-floating {
     .carousel.carousel-slider .carousel-item {
       width: 100%;
       height: 100%;
-      min-height: 400px;
       position: absolute;
       top: 0;
       left: 0; }
@@ -4944,13 +4943,14 @@ button.btn-floating {
     bottom: 0;
     margin: 0; }
     .carousel .indicators .indicator-item {
+      border: 1px solid #212121;
       display: inline-block;
       position: relative;
       cursor: pointer;
       height: 8px;
       width: 8px;
       margin: 24px 4px;
-      background-color: rgba(255, 255, 255, 0.5);
+      background-color: #9e9e9e;
       transition: background-color .3s;
       border-radius: 50%; }
       .carousel .indicators .indicator-item.active {
