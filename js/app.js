@@ -6,6 +6,7 @@ $('.a-scroll').click(function(e) {
   $('html, body').animate({
     scrollTop: targetOffset - menuHeight
   }, 500);
+  $('#change-hamburguer').prop("checked", false);
 })
 
 var ativado = false;
