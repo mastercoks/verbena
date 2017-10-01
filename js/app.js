@@ -90,9 +90,23 @@ debounce = function(func, wait, immediate) {
 		});
 	}
 
-	animeScroll();
+  function carouselHeight() {
+      $('.carousel.carousel-slider.custom-height').each(function() {
+          var newHeight = $(document).find('.tamanho-guia').height();
+          if (newHeight == 0) {
+            newHeight = $(this).find('.carousel-item img').height();
+          }
+          if (newHeight != 0) {
+            $(this).attr('style', 'height: '+newHeight+'px !important');
+          }
+      });
+  }
+
+  animeScroll();
+  carouselHeight();
 
 	$(document).scroll(debounce(function(){
 		animeScroll();
+    carouselHeight();
 	}, 100));
 })();
